@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/electronic_devices_shop</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">123456</property>
+		<mapping class="domain.Cart" />
+		<mapping class="domain.Category" />
+		<mapping class="domain.Invoice" />
+		<mapping class="domain.InvoiceDetail" />
+		<mapping class="domain.Product" />
+		<mapping class="domain.Role" />
+		<mapping class="domain.User" />
+	</session-factory>
+</hibernate-configuration>
