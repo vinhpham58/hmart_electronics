@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  <definition name="index" template="/common/topbar.jsp">
+    <put-attribute name="title" value="Home page" />
+    <put-attribute name="content" value="/pages/index.jsp"/>
+  </definition>
+  
+  <definition name="thank-you" template="/common/topbar.jsp">
+    <put-attribute name="title" value="Thankyou page" />
+    <put-attribute name="content" value="/pages/thank-you.jsp"/>
+  </definition>
+  <definition name="forbidden" extends="index">
+    <put-attribute name="title" value="Forbidden Page" />
+    <put-attribute name="content" value="/pages/forbidden.jsp"></put-attribute>
+  </definition>
+  <definition name="cart" extends="index">
+    <put-attribute name="title" value="Cart page" />
+    <put-attribute name="content" value="/pages/cart.jsp"></put-attribute>
+  </definition>
+  <definition name="check-out" extends="index">
+    <put-attribute name="title" value="Check Out page" />
+    <put-attribute name="content" value="/pages/check-out.jsp"></put-attribute>
+  </definition>
+  <definition name="empty-cart" extends="index">
+    <put-attribute name="title" value="EmptyCart page" />
+    <put-attribute name="content" value="/pages/empty-cart.jsp"></put-attribute>
+  </definition>
+  <definition name="login" extends="index">
+    <put-attribute name="title" value="Login page" />
+    <put-attribute name="content" value="/pages/login.jsp"></put-attribute>
+  </definition>
+  <definition name="register" extends="index">
+    <put-attribute name="title" value="Register page" />
+    <put-attribute name="content" value="/pages/register.jsp"></put-attribute>
+  </definition>
+  <definition name="product-list" extends="index">
+    <put-attribute name="title" value="Product List page" />
+    <put-attribute name="content" value="/pages/product-list.jsp"></put-attribute>
+  </definition>
+  <definition name="product-detail" extends="index">
+    <put-attribute name="title" value="Product Detail page" />
+    <put-attribute name="content" value="/pages/product-detail.jsp"></put-attribute>
+  </definition>
+  <definition name="admin/product-list" extends="index">
+    <put-attribute name="title" value="Product Management page" />
+    <put-attribute name="content" value="/pages/admin/product-list.jsp"></put-attribute>
+  </definition>
+  <definition name="admin/product-edit" extends="index">
+    <put-attribute name="title" value="Product Management page" />
+    <put-attribute name="content" value="/pages/admin/product-edit.jsp"></put-attribute>
+  </definition>
+  
+  
+<!--   <definition name="login" extends="login_template">
+    <put-attribute name="title" value="Login page" />
+    <put-attribute name="content" value="/pages/login.jsp"></put-attribute>
+  </definition>
+  
+  <definition name="register" extends="login_template">
+    <put-attribute name="title" value="Register page" />
+    <put-attribute name="content" value="/pages/register.jsp"></put-attribute>
+  </definition>
+  
+  <definition name="list" extends="admin_template">
+    <put-attribute name="title" value="List of Department's page" />
+    <put-attribute name="content" value="/pages/department/list.jsp"></put-attribute>
+  </definition>
+  
+   <definition name="add" extends="admin_template">
+    <put-attribute name="title" value="Add Department" />
+    <put-attribute name="content" value="/pages/department/add.jsp"></put-attribute>
+  </definition>
+  
+  <definition name="forbidden" extends="login_template">
+    <put-attribute name="title" value="Forbidden page" />
+    <put-attribute name="content" value="/pages/forbidden.jsp"></put-attribute>
+  </definition> -->
+
+
+</tiles-definitions>
